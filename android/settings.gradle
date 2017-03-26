@@ -1,0 +1,3 @@
+rootProject.name = 'programming_horror'
+
+include ':app'
