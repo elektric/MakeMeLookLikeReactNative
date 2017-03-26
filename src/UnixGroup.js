@@ -4,19 +4,29 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  Switch,
 } from 'react-native';
 
 export default class UnixGroup extends Component {
   constructor(props){
     super(props);
+    this.state = {
+            switchOn: true,
+          };
   }
   render() {
     return (
-      <View>
+      <View style={styles.splitViewOuter}>
+        <View style={styles.splitViewInnerLeft}>
         <Text style={styles.unixGroupStyle}>
           {this.props.details.Name}
         </Text>
+        </View>
+        <View style={styles.splitViewInnerRight}>
+          <Switch style={styles.splitViewInnerRight} onValueChange={(value) => this.setState({switchOn: value})}
+          value={this.state.switchOn} />
+        </View>
       </View>
     );
   }
@@ -32,5 +42,18 @@ const styles = StyleSheet.create({
    marginBottom: 1,
    //backgroundColor: 'steelblue',
  },
- 
+ splitViewOuter: {
+   flex: 1,
+   flexDirection: 'row',
+   justifyContent: 'space-around',
+ },
+ splitViewInnerLeft: {
+   flex: 1,
+   //justifyContent: 'center',
+ },
+ splitViewInnerRight: {
+   //flex: 1,
+   //justifyContent: 'center',
+ },
+
 });

@@ -6,6 +6,8 @@ import {
   View,
   Image,
   ScrollView,
+  Button,
+  Alert,
 } from 'react-native';
 import AppFuncs from './AppFuncs';
 import ADGroups from './ADGroups';
@@ -26,12 +28,20 @@ export default class UserDetails extends Component {
           <UnixGroups unixgroups={this.props.user.UnixGroups}/>
           </ScrollView>
         </View>
+        <Button
+          title="Submit"
+          color="#841584"
+          onPress={onPressSubmit}>
+        </Button>
+
       </View>
     );
   }
 
 }
-
+const onPressSubmit = () => {
+  Alert.alert('Submitted!');
+};
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -46,6 +56,8 @@ const styles = StyleSheet.create({
    color: '#51b',
    marginBottom: 8,
    textAlign: 'center',
+   borderBottomColor: '#bbb',
+   borderBottomWidth: StyleSheet.hairlineWidth,
    //backgroundColor: 'skyblue',
 
  },
@@ -53,6 +65,7 @@ const styles = StyleSheet.create({
    color: '#51b',
    fontSize: 30,
    textAlign: 'center',
+
    //backgroundColor: 'steelblue',
  },
  scroll: {
