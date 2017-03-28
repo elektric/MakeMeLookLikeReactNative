@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-export default class programming_horror extends Component {
+export default class make_me_look_like extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('programming_horror', () => programming_horror);
+AppRegistry.registerComponent('make_me_look_like', () => make_me_look_like);

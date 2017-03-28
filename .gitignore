@@ -2,6 +2,10 @@
 #
 .DS_Store
 
+# Jest
+# Don't upload transform cache - just keep the testing snapshots.
+jest/
+
 # Xcode
 #
 build/

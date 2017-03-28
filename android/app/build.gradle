@@ -87,7 +87,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.programming_horror"
+        applicationId "com.make_me_look_like"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1

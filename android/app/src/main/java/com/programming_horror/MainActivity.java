@@ -1,4 +1,4 @@
-package com.programming_horror;
+package com.make_me_look_like;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "programming_horror";
+        return "make_me_look_like";
     }
 }

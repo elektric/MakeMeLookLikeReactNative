@@ -14,10 +14,11 @@ import {
   ScrollView,
 } from 'react-native';
 import UserDetails from './src/UserDetails.js';
-// var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
-var REQUEST_URL = 'http://192.168.1.217:52820/api/users/details/KAL1730';
+var userList = "Kal1730"
+var REQUEST_URL = 'http://s258948.nml.com:52820/api/users/details/' + userList;
+console.log(REQUEST_URL);
 
-export default class programming_horror extends Component {
+export default class make_me_look_like extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -28,6 +29,7 @@ export default class programming_horror extends Component {
   componentDidMount() {
    this.fetchData();
  }
+
  fetchData() {
     fetch(REQUEST_URL)
       .then((response) => response.json())
@@ -73,4 +75,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('programming_horror', () => programming_horror);
+AppRegistry.registerComponent('make_me_look_like', () => make_me_look_like);

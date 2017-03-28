@@ -1,13 +1,14 @@
 import 'react-native';
 import React from 'react';
-import Index from '../index.android.js';
-import 'isomorphic-fetch';
+import ADGroup from '../src/ADGroup';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-it('renders correctly', () => {
+test('AD Group renders', () => {
+  let adg = {'Name':'ADGroup7'};
   const tree = renderer.create(
-    <Index />
-  );
+    <ADGroup details={adg} />
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
 });
