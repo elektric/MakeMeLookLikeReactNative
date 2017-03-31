@@ -6,7 +6,7 @@ import ADGroup from '../src/ADGroup';
 import renderer from 'react-test-renderer';
 
 test('AD Group renders', () => {
-  let adg = {'Name':'ADGroup7'};
+  let adg = {'Name':'ADGroup8'};
   const tree = renderer.create(
     <ADGroup details={adg} />
   ).toJSON();

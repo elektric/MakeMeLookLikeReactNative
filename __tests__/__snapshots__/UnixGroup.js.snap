@@ -30,7 +30,7 @@ exports[`UnixGroup renders 1`] = `
         }
       }
     >
-      UnixGroup2
+      UnixGroup3
     </Text>
   </View>
   <View

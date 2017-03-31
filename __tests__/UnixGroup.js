@@ -6,7 +6,7 @@ import UnixGroup from '../src/UnixGroup';
 import renderer from 'react-test-renderer';
 
 test('UnixGroup renders', () => {
-  let ug = {'Name':'UnixGroup2'};
+  let ug = {'Name':'UnixGroup3'};
   const tree = renderer.create(
     <UnixGroup details={ug} />
   ).toJSON();
